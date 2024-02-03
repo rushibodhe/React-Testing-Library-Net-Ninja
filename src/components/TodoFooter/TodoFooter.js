@@ -7,9 +7,9 @@ function TodoFooter({
 }) {
     return (
         <div className="todo-footer">
-            <p>{numberOfIncompleteTasks} {numberOfIncompleteTasks === 1 ? "task" : "tasks"} left</p>
+            <p data-testid="para" style={{ "opacity": 0 }}>{numberOfIncompleteTasks} {numberOfIncompleteTasks === 1 ? "task" : "tasks"} left</p>
             <Link to="/followers">Followers</Link>
-        </div>
+        </div >
     )
 }
 
